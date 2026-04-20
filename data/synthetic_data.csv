@@ -1,0 +1,201 @@
+Age,Gender,Income,Education,Marital Status,Number of Children,Home Ownership,Credit Score
+56,Female,25895,Bachelor,Divorced,4,Mortgage,High
+69,Female,39738,Doctorate,Single,4,Mortgage,Average
+46,Male,50746,Master,Married,1,Rented,High
+32,Male,69377,High School,Married,2,Owned,Average
+60,Female,68404,Bachelor,Single,2,Rented,Low
+25,Male,74045,High School,Single,3,Mortgage,Low
+38,Male,117888,High School,Married,1,Rented,Average
+56,Male,149307,Bachelor,Divorced,1,Rented,Average
+36,Female,59790,Doctorate,Married,1,Owned,Low
+40,Female,127455,High School,Single,1,Owned,High
+28,Female,25600,Master,Married,2,Mortgage,Average
+28,Male,114660,High School,Single,2,Rented,Average
+41,Male,113179,Bachelor,Married,1,Rented,Average
+53,Female,60764,Bachelor,Divorced,3,Rented,Average
+57,Female,94543,Bachelor,Married,0,Mortgage,Average
+41,Female,65714,Doctorate,Married,0,Mortgage,Low
+20,Female,76835,High School,Single,3,Owned,Low
+39,Male,122946,Doctorate,Single,1,Owned,High
+19,Female,148191,Doctorate,Single,2,Owned,High
+41,Male,129616,Bachelor,Married,0,Rented,Average
+61,Female,125983,Bachelor,Divorced,4,Rented,Average
+47,Male,93744,Doctorate,Single,4,Owned,Average
+55,Female,76491,High School,Single,3,Rented,Average
+19,Female,144123,Master,Married,1,Owned,Low
+38,Female,38589,Doctorate,Single,0,Mortgage,Low
+50,Female,63484,High School,Divorced,1,Owned,High
+29,Male,102989,Bachelor,Divorced,0,Mortgage,Average
+39,Female,56212,Bachelor,Single,3,Rented,Low
+61,Male,63525,High School,Single,3,Owned,Average
+42,Male,67202,Master,Married,4,Rented,Average
+66,Male,52635,Bachelor,Divorced,1,Mortgage,Average
+44,Male,83208,Bachelor,Divorced,4,Mortgage,Low
+59,Female,53828,Bachelor,Single,1,Mortgage,Low
+45,Male,38711,High School,Married,4,Rented,High
+33,Male,23420,Doctorate,Divorced,2,Rented,Low
+32,Male,116752,Bachelor,Divorced,2,Rented,Average
+64,Female,20301,Doctorate,Married,2,Rented,Average
+68,Female,65236,Master,Married,2,Mortgage,Low
+61,Female,135294,Bachelor,Divorced,0,Mortgage,Average
+69,Female,137858,Bachelor,Divorced,2,Owned,High
+20,Male,86235,Master,Married,3,Owned,High
+54,Male,74240,Bachelor,Divorced,3,Rented,High
+68,Female,144019,Doctorate,Single,0,Mortgage,Average
+24,Male,85726,High School,Single,2,Mortgage,Average
+38,Male,30492,Doctorate,Married,2,Mortgage,Average
+26,Male,135668,High School,Married,2,Owned,Average
+56,Female,121279,High School,Married,4,Owned,High
+35,Female,26102,Doctorate,Single,1,Mortgage,Low
+21,Male,70336,Doctorate,Divorced,4,Mortgage,Low
+42,Female,138015,Doctorate,Single,1,Mortgage,Average
+31,Female,105314,Doctorate,Divorced,2,Owned,Low
+67,Female,143007,Master,Single,2,Mortgage,Low
+26,Female,46641,Bachelor,Divorced,4,Mortgage,Average
+43,Female,54584,High School,Single,4,Rented,Average
+19,Male,52745,Doctorate,Married,1,Rented,High
+37,Female,140542,Doctorate,Single,3,Owned,High
+45,Male,43093,Doctorate,Divorced,1,Mortgage,Average
+64,Male,86105,Master,Single,4,Mortgage,Average
+24,Female,123746,Doctorate,Single,4,Rented,Average
+61,Male,120199,Doctorate,Single,0,Owned,Average
+25,Male,71885,Doctorate,Married,4,Rented,Average
+64,Male,56631,Bachelor,Single,0,Rented,Average
+52,Female,131217,Master,Married,3,Rented,Average
+31,Female,92991,Doctorate,Married,1,Rented,Average
+34,Male,24014,High School,Single,1,Mortgage,Average
+53,Female,31093,High School,Single,0,Mortgage,Average
+67,Female,38070,High School,Single,1,Rented,High
+57,Female,55777,Master,Divorced,4,Owned,High
+21,Female,76958,Master,Single,2,Owned,Low
+19,Male,102074,High School,Married,0,Owned,High
+23,Male,30729,Doctorate,Single,1,Owned,Average
+59,Female,119713,Master,Divorced,0,Rented,High
+21,Female,65017,High School,Single,0,Mortgage,High
+46,Male,86320,High School,Divorced,2,Owned,Average
+35,Male,47751,Doctorate,Divorced,4,Rented,Low
+43,Female,126400,Bachelor,Single,0,Owned,Average
+61,Male,125864,Master,Married,1,Owned,Average
+51,Female,98069,Doctorate,Divorced,3,Rented,Average
+27,Female,125647,High School,Single,0,Mortgage,Average
+53,Male,125510,High School,Single,0,Mortgage,Low
+31,Male,74748,Doctorate,Married,2,Rented,High
+48,Female,25801,Master,Divorced,4,Mortgage,High
+65,Female,39190,Bachelor,Divorced,3,Rented,Average
+32,Male,69689,Bachelor,Single,1,Rented,Low
+25,Female,124290,High School,Single,3,Rented,Average
+31,Male,70993,Master,Married,1,Mortgage,Low
+40,Female,49592,Bachelor,Married,4,Rented,High
+57,Male,30647,Master,Divorced,1,Owned,Low
+38,Male,28716,Master,Divorced,2,Mortgage,Average
+33,Male,108891,High School,Single,2,Mortgage,Average
+62,Female,107545,Bachelor,Divorced,2,Mortgage,Average
+35,Female,137638,Doctorate,Married,2,Mortgage,Average
+64,Male,109912,High School,Married,3,Owned,High
+41,Female,130627,Bachelor,Single,4,Mortgage,Average
+43,Male,90316,Bachelor,Married,1,Mortgage,Low
+42,Male,146995,Bachelor,Married,1,Rented,Low
+62,Female,22368,Bachelor,Married,2,Mortgage,High
+58,Female,97575,Bachelor,Married,2,Owned,High
+46,Male,26655,Master,Single,0,Owned,Average
+32,Female,126477,High School,Single,4,Owned,Average
+62,Female,90031,Master,Divorced,3,Owned,Average
+18,Male,96429,Doctorate,Married,1,Mortgage,Low
+42,Male,111083,Bachelor,Divorced,0,Mortgage,High
+24,Female,107922,High School,Single,0,Owned,Average
+26,Male,75766,Bachelor,Single,1,Owned,Average
+41,Male,144046,High School,Single,3,Mortgage,Average
+18,Female,33403,Master,Single,0,Owned,Low
+61,Male,52097,High School,Single,0,Rented,Low
+25,Male,98657,Doctorate,Single,4,Owned,High
+41,Female,140607,Doctorate,Single,3,Owned,Low
+28,Female,30966,High School,Married,0,Rented,Average
+68,Male,144862,High School,Divorced,3,Rented,Average
+34,Male,119157,High School,Single,1,Mortgage,Average
+25,Female,138834,High School,Married,2,Mortgage,Average
+52,Female,113848,Doctorate,Married,0,Rented,Average
+52,Female,72921,Bachelor,Divorced,4,Rented,High
+50,Female,69726,High School,Single,1,Mortgage,Average
+22,Male,146141,High School,Divorced,3,Owned,Average
+59,Female,70300,Doctorate,Single,1,Rented,Average
+56,Female,42677,Doctorate,Married,0,Mortgage,Average
+58,Male,75609,Master,Married,3,Owned,High
+45,Female,116825,High School,Married,2,Rented,High
+24,Male,76661,Master,Married,1,Owned,Average
+26,Female,51024,Doctorate,Divorced,0,Mortgage,Low
+25,Female,128211,Doctorate,Single,4,Rented,Average
+29,Female,90313,Bachelor,Single,3,Owned,Average
+51,Male,147813,High School,Divorced,1,Rented,Low
+50,Male,73006,Master,Single,1,Owned,Average
+65,Female,115285,Doctorate,Married,2,Mortgage,Average
+40,Male,35338,Doctorate,Single,2,Mortgage,Average
+41,Male,88027,Master,Married,4,Rented,High
+54,Male,112772,Bachelor,Divorced,4,Owned,Low
+52,Male,133632,Doctorate,Single,0,Rented,Low
+61,Male,100135,High School,Divorced,0,Rented,High
+57,Male,39508,Doctorate,Single,4,Owned,Average
+39,Female,140379,High School,Married,4,Owned,Average
+44,Female,23051,Master,Divorced,3,Owned,Average
+52,Male,68747,High School,Single,2,Mortgage,Average
+18,Female,134692,Master,Married,0,Rented,High
+52,Female,107142,High School,Divorced,2,Rented,High
+54,Female,107235,Master,Divorced,2,Mortgage,Average
+64,Female,74021,High School,Single,4,Owned,Average
+31,Male,86412,Bachelor,Single,3,Mortgage,Average
+20,Female,78335,High School,Single,1,Mortgage,Average
+18,Female,76179,High School,Married,3,Mortgage,Low
+22,Male,52093,Bachelor,Single,3,Rented,High
+43,Male,89678,Doctorate,Divorced,2,Mortgage,Low
+31,Female,100738,Doctorate,Divorced,3,Rented,High
+56,Female,59734,High School,Single,0,Rented,Average
+44,Female,92615,Bachelor,Single,2,Rented,Low
+26,Female,93523,High School,Divorced,0,Owned,Average
+32,Female,125103,Master,Married,1,Rented,High
+32,Female,114476,Master,Single,2,Rented,High
+43,Male,122769,High School,Single,1,Owned,High
+59,Female,37019,Doctorate,Divorced,2,Rented,Average
+30,Female,131721,Doctorate,Single,4,Mortgage,Average
+68,Male,103613,High School,Married,3,Mortgage,High
+49,Male,111794,High School,Divorced,4,Rented,Average
+56,Male,106672,Master,Single,1,Owned,Average
+66,Male,93847,Doctorate,Divorced,3,Mortgage,Average
+69,Female,102750,High School,Single,2,Owned,High
+49,Female,99634,Master,Single,3,Owned,High
+21,Female,48251,Doctorate,Single,0,Mortgage,Low
+47,Female,123481,Bachelor,Married,3,Owned,High
+54,Female,132566,Master,Married,0,Mortgage,High
+40,Female,45945,Doctorate,Divorced,3,Owned,Low
+56,Male,110852,Doctorate,Single,0,Mortgage,Average
+62,Female,52217,Master,Single,1,Rented,High
+32,Male,28308,Bachelor,Married,4,Mortgage,Low
+60,Male,25949,Master,Single,2,Mortgage,Average
+46,Female,71990,Doctorate,Married,3,Mortgage,Average
+53,Male,21150,High School,Single,4,Mortgage,High
+30,Female,109480,High School,Divorced,2,Owned,High
+49,Male,120235,Master,Single,2,Rented,High
+24,Female,94740,Doctorate,Single,0,Mortgage,Average
+68,Male,136352,High School,Married,1,Owned,High
+39,Female,86617,Doctorate,Single,1,Rented,High
+45,Female,114841,Master,Single,4,Rented,Average
+19,Female,36896,High School,Married,1,Rented,High
+59,Female,145729,Doctorate,Divorced,3,Rented,Low
+62,Female,66175,High School,Divorced,1,Mortgage,Average
+23,Male,27805,Master,Married,4,Mortgage,Average
+45,Male,25237,Doctorate,Married,1,Owned,Low
+45,Male,135247,High School,Married,3,Owned,Low
+61,Female,40056,Master,Married,0,Owned,Average
+61,Male,65543,High School,Married,4,Rented,Average
+37,Female,76556,High School,Divorced,0,Rented,High
+47,Female,134548,Bachelor,Divorced,0,Mortgage,Low
+28,Male,131488,Bachelor,Married,0,Rented,Average
+45,Male,23343,Master,Single,2,Rented,Average
+42,Female,33500,Bachelor,Married,2,Rented,High
+56,Male,73222,Master,Single,0,Owned,Average
+50,Female,49375,Bachelor,Married,4,Owned,Average
+18,Female,29662,High School,Married,3,Mortgage,High
+44,Female,36964,Master,Divorced,3,Rented,Average
+69,Female,133429,Master,Single,1,Rented,Average
+30,Female,141692,High School,Single,4,Mortgage,Low
+58,Male,79638,Master,Divorced,2,Rented,High
+20,Male,93666,Master,Divorced,0,Rented,Low
+56,Female,105067,Bachelor,Divorced,1,Owned,High
