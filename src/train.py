@@ -3,31 +3,32 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 import os
 
-def train_model():
+def entrenar_modelo():
     os.makedirs('models', exist_ok=True)
     df = pd.read_csv('data/synthetic_data.csv')
     
-    # Mapping Encoders (Vibe Coding Protocol)
+    # Mapeos en Español (Vibe Coding Protocol)
     mappings = {
-        'Gender': {'Male': 0, 'Female': 1},
-        'Education': {'High School': 0, 'Bachelor': 1, 'Master': 2, 'Doctorate': 3},
-        'Marital Status': {'Single': 0, 'Married': 1, 'Divorced': 2},
-        'Home Ownership': {'Rented': 0, 'Owned': 1, 'Mortgage': 2},
-        'Credit Score': {'Low': 0, 'Average': 1, 'High': 2}
+        'Genero': {'Hombre': 0, 'Mujer': 1},
+        'Educacion': {'Bachillerato': 0, 'Pregrado': 1, 'Maestría': 2, 'Doctorado': 3},
+        'Estado_Civil': {'Soltero': 0, 'Casado': 1, 'Divorciado': 2},
+        'Vivienda': {'Renta': 0, 'Propia': 1, 'Hipoteca': 2},
+        'Puntaje_Crediticio': {'Bajo': 0, 'Promedio': 1, 'Alto': 2}
     }
     
     for col, mapping in mappings.items():
-        df[col] = df[col].map(mapping)
+        if col in df.columns:
+            df[col] = df[col].map(mapping)
     
-    X = df.drop('Credit Score', axis=1)
-    y = df['Credit Score']
+    X = df.drop('Puntaje_Crediticio', axis=1)
+    y = df['Puntaje_Crediticio']
     
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X, y)
     
     joblib.dump(model, 'models/model.pkl')
     joblib.dump(mappings, 'models/mappings.joblib')
-    print("[ML LAYER] >> Modelo y Mappings exportados a models/")
+    print("[ML LAYER] >> Inteligencia entrenada y localizada en models/")
 
 if __name__ == "__main__":
-    train_model()
+    entrenar_modelo()

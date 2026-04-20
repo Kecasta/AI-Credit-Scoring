@@ -2,24 +2,24 @@ import pandas as pd
 import numpy as np
 import os
 
-def generate_synthetic_credit_data(n_samples=200):
+def generar_datos_sinteticos(n_muestras=200):
     os.makedirs('data', exist_ok=True)
     np.random.seed(42)
     
     data = {
-        'Age': np.random.randint(18, 70, n_samples),
-        'Gender': np.random.choice(['Male', 'Female'], n_samples),
-        'Income': np.random.randint(20000, 150000, n_samples),
-        'Education': np.random.choice(['High School', 'Bachelor', 'Master', 'Doctorate'], n_samples),
-        'Marital Status': np.random.choice(['Single', 'Married', 'Divorced'], n_samples),
-        'Number of Children': np.random.randint(0, 5, n_samples),
-        'Home Ownership': np.random.choice(['Rented', 'Owned', 'Mortgage'], n_samples),
-        'Credit Score': np.random.choice(['Low', 'Average', 'High'], n_samples, p=[0.2, 0.5, 0.3])
+        'Edad': np.random.randint(18, 75, n_muestras),
+        'Genero': np.random.choice(['Hombre', 'Mujer'], n_muestras),
+        'Ingresos': np.random.randint(1500000, 15000000, n_muestras), # Pesos/Moneda local
+        'Educacion': np.random.choice(['Bachillerato', 'Pregrado', 'Maestría', 'Doctorado'], n_muestras),
+        'Estado_Civil': np.random.choice(['Soltero', 'Casado', 'Divorciado'], n_muestras),
+        'Hijos': np.random.randint(0, 5, n_muestras),
+        'Vivienda': np.random.choice(['Renta', 'Propia', 'Hipoteca'], n_muestras),
+        'Puntaje_Crediticio': np.random.choice(['Bajo', 'Promedio', 'Alto'], n_muestras, p=[0.2, 0.5, 0.3])
     }
     
     df = pd.DataFrame(data)
     df.to_csv('data/synthetic_data.csv', index=False)
-    print("[DATA LAYER] >> synthetic_data.csv generado exitosamente.")
+    print("[CAPA DE DATOS] >> Datos localizados generados en data/synthetic_data.csv")
 
 if __name__ == "__main__":
-    generate_synthetic_credit_data()
+    generar_datos_sinteticos()
