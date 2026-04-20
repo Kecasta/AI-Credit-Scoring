@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 import os
+import plotly.express as px
 
 # Configuración de Marca y Estilo
 st.set_page_config(page_title="Scoring Crediticio IA", page_icon="💳", layout="centered")
@@ -62,6 +63,33 @@ if modelo is not None and mappings is not None:
         else: # Alto (Buen puntaje)
             st.success("🟢 **CRÉDITO APROBADO (RIESGO BAJO)**")
             st.write("El perfil cumple con los estándares óptimos de solvencia.")
+
+        st.markdown("---")
+        st.subheader("📊 Análisis de Factores Determinantes")
+        
+        # 2. KPIs rápidos
+        col_kpi1, col_kpi2, col_kpi3 = st.columns(3)
+        probabilidades = modelo.predict_proba(entrada)[0]
+        
+        with col_kpi1:
+            st.metric("Confianza de IA", f"{max(probabilidades)*100:.1f}%")
+        with col_kpi2:
+            st.metric("Ingresos Evaluados", f"${ingresos:,.0f}")
+        with col_kpi3:
+            st.metric("Estabilidad", "Alta" if edad > 30 and estado_civil != 'Soltero' else "Media")
+
+        # 3. Gráfico de importancia (Por qué salió ese resultado)
+        importancias = modelo.feature_importances_
+        fig = px.bar(
+            x=importancias, 
+            y=entrada.columns, 
+            orientation='h',
+            title="Peso de las Variables en su Resultado",
+            labels={'x': 'Importancia Relativa', 'y': 'Variable'},
+            color_discrete_sequence=['#3498DB']
+        )
+        fig.update_layout(height=400, margin=dict(l=20, r=20, t=40, b=20), yaxis={'categoryorder':'total ascending'})
+        st.plotly_chart(fig, use_container_width=True)
 else:
     st.error("🚨 ¡Cerebro de IA no encontrado! Por favor, ejecuta el entrenamiento.")
     if st.button("Re-entrenar Sistema"):
@@ -70,4 +98,4 @@ else:
         st.rerun()
 
 st.markdown("---")
-st.caption("Nexus AI Credit System | Localización y Estética Antigravity")
+st.caption("Nexus AI Credit System | Interfaz Reactiva y Análisis Dinámico")
