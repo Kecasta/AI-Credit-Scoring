@@ -3,3 +3,6 @@ scikit-learn
 streamlit
 joblib
 numpy
+langchain
+langchain-openai
+python-dotenv
