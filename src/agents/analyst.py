@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
 from .prompts import SYSTEM_PROMPT
 
@@ -8,8 +8,12 @@ load_dotenv()
 
 class CreditAnalyst:
     def __init__(self):
-        # Usamos gpt-4o-mini por eficiencia y costo
-        self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
+        # Usamos Llama 3 que es gratuito en la capa de Groq
+        self.llm = ChatGroq(
+            temperature=0, 
+            model_name="llama3-70b-8192", 
+            groq_api_key=os.getenv("GROQ_API_KEY")
+        )
         
     def generar_informe(self, score_resultado, datos_usuario):
         prompt_template = ChatPromptTemplate.from_messages([
