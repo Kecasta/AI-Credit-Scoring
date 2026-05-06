@@ -3,6 +3,10 @@ import joblib
 import pandas as pd
 import os
 import plotly.express as px
+from src.agents.analyst import CreditAnalyst
+
+# Inicializamos el agente fuera del flujo principal para ahorrar recursos
+analista = CreditAnalyst()
 
 # Configuración de Marca y Estilo
 st.set_page_config(page_title="Scoring Crediticio IA", page_icon="💳", layout="centered")
@@ -90,6 +94,23 @@ if modelo is not None and mappings is not None:
         )
         fig.update_layout(height=400, margin=dict(l=20, r=20, t=40, b=20), yaxis={'categoryorder':'total ascending'})
         st.plotly_chart(fig, use_container_width=True)
+
+        # 3. La "Magia" del Agente
+        with st.spinner("El Agente Analista está redactando el informe personalizado..."):
+            # Preparamos el diccionario de datos para el agente
+            perfil_usuario = {
+                "Edad": edad,
+                "Ingresos": ingresos,
+                "Educacion": educacion
+            }
+            
+            # Llamamos al agente
+            informe = analista.generar_informe(prediccion, perfil_usuario)
+            
+        # 4. Mostrar el informe con estilo
+        st.markdown("---")
+        st.subheader("🤖 Informe del Agente IA")
+        st.info(informe)
 else:
     st.error("🚨 ¡Cerebro de IA no encontrado! Por favor, ejecuta el entrenamiento.")
     if st.button("Re-entrenar Sistema"):
