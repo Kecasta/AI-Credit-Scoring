@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from .prompts import SYSTEM_PROMPT
 
 # 1. Cargamos las variables del archivo .env
@@ -13,7 +13,7 @@ class CreditAnalyst:
         # Usamos Llama 3 por su gran capacidad de razonamiento financiero
         self.llm = ChatGroq(
             temperature=0.7, 
-            model_name="llama3-70b-8192", 
+            model_name="llama-3.3-70b-versatile", 
             groq_api_key=os.getenv("GROQ_API_KEY")
         )
         
