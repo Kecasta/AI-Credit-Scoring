@@ -9,7 +9,7 @@ from src.agents.analyst import CreditAnalyst
 analista = CreditAnalyst()
 
 # Configuración de Marca y Estilo
-st.set_page_config(page_title="Scoring Crediticio IA", page_icon="💳", layout="centered")
+st.set_page_config(page_title="AI Credit Scoring", page_icon="💳", layout="wide", initial_sidebar_state="collapsed")
 
 # Carga de Inteligencia
 @st.cache_resource
@@ -119,4 +119,4 @@ else:
         st.rerun()
 
 st.markdown("---")
-st.caption("Nexus AI Credit System | Interfaz Reactiva y Análisis Dinámico")
+st.caption("Desarrollado por Kevin Seryeit Castañeda Aldana | Evaluador de Riesgo Inteligente")
