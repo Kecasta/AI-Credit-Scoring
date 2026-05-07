@@ -1,51 +1,61 @@
-# 💳 AI Credit Scoring: Evaluador de Riesgo Inteligente
+# 🚀 AI Credit Scoring: Sistema Experto con Inteligencia Agéntica
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E.svg)
+Esta plataforma es una solución de IA Híbrida diseñada para el sector Fintech. Combina el rigor matemático del Machine Learning Tradicional con la capacidad cognitiva de Agentes Autónomos (LLMs) para ofrecer una evaluación de riesgo crediticio con explicabilidad humana en tiempo real.
 
-Esta plataforma es una solución integral de **Machine Learning** diseñada para el sector Fintech. Permite evaluar el riesgo crediticio de solicitantes en tiempo real mediante un modelo predictivo de clasificación, ofreciendo una interfaz intuitiva y análisis de factores determinantes (XAI).
+## 🌟 Lo que hace único a este proyecto
 
-## 🚀 Características Principales
+A diferencia de los evaluadores estándar, este sistema utiliza una **Arquitectura de Dos Capas**:
 
-- **Modelo Predictivo:** Basado en `RandomForestClassifier` para una alta precisión y estabilidad.
-- **Interpretabilidad (XAI):** Visualización dinámica de los factores que más influuyen en cada decisión crediticia.
-- **Interfaz Premium:** Dashboard desarrollado en Streamlit con diseño enfocado en la experiencia de usuario (UX) y modo oscuro nativo.
-- **Localización Total:** Sistema adaptado 100% al mercado de habla hispana.
-- **KPIs en Tiempo Real:** Métricas de confianza de IA y estabilidad del solicitante tras cada evaluación.
+- **Capa Predictiva (El Ojo):** Un modelo `RandomForestClassifier` que garantiza precisión técnica y métricas deterministas.
+- **Capa Agéntica (La Voz):** Un Agente de IA potenciado por **Llama 3.3** (vía Groq) que actúa como un analista senior, interpretando el resultado y redactando un plan de acción financiero personalizado para el solicitante.
 
-## 🛠️ Arquitectura del Proyecto
+## 🛠️ Stack Tecnológico
 
-El proyecto sigue una estructura modular para facilitar su escalabilidad y mantenimiento:
+- **Core:** Python 3.10+
+- **ML Engine:** Scikit-Learn (Random Forest)
+- **AI Orchestration:** LangChain (Agentic Workflows)
+- **LLM Infrastructure:** Groq Cloud (Llama 3.3 Versatile)
+- **Interface:** Streamlit (Premium UX/UI)
+- **Data Ops:** Pandas, Joblib, Python-Dotenv
 
-- `src/generate_data.py`: Script para la creación de datasets sintéticos controlados.
-- `src/train.py`: Pipeline de entrenamiento y exportación de modelos.
-- `app.py`: Aplicación web interactiva.
-- `models/`: Artefactos del modelo y mapeos serializados.
+## 📁 Estructura de la Solución (Modular)
 
-## 📦 Instalación y Uso
+```plaintext
+├── models/               # Artefactos del modelo (.pkl) y mapeos
+├── src/
+│   ├── agents/          # [NUEVO] Capa de razonamiento y prompts del Agente
+│   ├── generate_data.py # Simulación de datos sintéticos controlados
+│   └── train.py         # Pipeline de entrenamiento y exportación
+├── app.py               # Dashboard interactivo y orquestación final
+└── requirements.txt     # Dependencias del ecosistema
+```
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/Kecasta/AI-Credit-Scoring.git
-   cd AI-Credit-Scoring
-   ```
+## 📦 Instalación y Configuración
 
-2. **Instalar dependencias:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Clonar y Preparar:**
+```bash
+git clone https://github.com/Kecasta/AI-Credit-Scoring.git
+cd AI-Credit-Scoring
+```
 
-3. **Generar datos y entrenar (opcional):**
-   ```bash
-   python src/generate_data.py
-   python src/train.py
-   ```
+**Variables de Entorno:**
+Crea un archivo `.env` en la raíz y añade tu llave de Groq:
+```env
+GROQ_API_KEY="tu_api_key_aqui"
+```
 
-4. **Lanzar la aplicación:**
-   ```bash
-   streamlit run app.py
-   ```
+**Despliegue Local:**
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## 💼 Impacto de Negocio & Casos de Uso
+
+- **Optimización Operativa:** Reduce el tiempo de respuesta de analistas de crédito de horas a milisegundos.
+- **Fidelización del Cliente:** No solo entrega un "No", entrega un plan de mejora financiera redactado por IA.
+- **Escalabilidad:** Arquitectura lista para integrarse con APIs bancarias reales y flujos de trabajo en la nube.
 
 ---
-Desarrollado por **Kevin Seryeit Castañeda Aldana** - Ingeniero de Sistemas enfocado en soluciones de Inteligencia Artificial.
+**Desarrollado por Kevin Seryeit Castañeda Aldana**  
+*Ingeniero de Sistemas | Especialista en Soluciones de IA Agéntica & Backend*
