@@ -37,10 +37,13 @@ class CreditAnalyst:
             f"Nivel Educativo: {datos_usuario['Educacion']}"
         )
         
-        # El Agente procesa y genera la respuesta
-        respuesta = cadena.invoke({
-            "resultado": "APROBADO" if score_resultado == 1 else "RECHAZADO",
-            "perfil": perfil_str
-        })
-        
-        return respuesta.content
+        # El Agente procesa y genera la respuesta con Graceful Degradation
+        try:
+            respuesta = cadena.invoke({
+                "resultado": "APROBADO" if score_resultado == 1 else "RECHAZADO",
+                "perfil": perfil_str
+            })
+            return respuesta.content
+        except Exception as e:
+            print(f"[Error Groq API] Fallo al generar informe agéntico: {e}")
+            return "⚠️ El análisis detallado de IA no está disponible temporalmente. Por favor, consulte el veredicto matemático y los KPIs de confianza arriba."
